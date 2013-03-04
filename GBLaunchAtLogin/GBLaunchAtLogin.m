@@ -18,8 +18,7 @@
 	CFURLRef url = (CFURLRef)[NSURL fileURLWithPath:appPath];
     
 	// Create a reference to the shared file list.
-	LSSharedFileListRef loginItems = LSSharedFileListCreate(NULL,
-                                                            kLSSharedFileListSessionLoginItems, NULL);
+	LSSharedFileListRef loginItems = LSSharedFileListCreate(NULL, kLSSharedFileListSessionLoginItems, NULL);
     
 	if (loginItems) {
 		UInt32 seedValue;
