@@ -255,6 +255,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GBLaunchAtLogin/GBLaunchAtLogin-Prefix.pch";
 				INFOPLIST_FILE = "GBLaunchAtLogin/GBLaunchAtLogin-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -270,6 +271,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GBLaunchAtLogin/GBLaunchAtLogin-Prefix.pch";
 				INFOPLIST_FILE = "GBLaunchAtLogin/GBLaunchAtLogin-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
