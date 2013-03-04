@@ -26,8 +26,7 @@
 		// a NSArray so that it will be easier to iterate.
 		NSArray  *loginItemsArray = (NSArray *)LSSharedFileListCopySnapshot(loginItems, &seedValue);
 		for(int i = 0 ; i< [loginItemsArray count]; i++){
-			LSSharedFileListItemRef itemRef = (LSSharedFileListItemRef)[loginItemsArray
-                                                                        objectAtIndex:i];
+			LSSharedFileListItemRef itemRef = (LSSharedFileListItemRef)loginItemsArray[i];
 			//Resolve the item with URL
 			if (LSSharedFileListItemResolve(itemRef, 0, (CFURLRef*) &url, NULL) == noErr) {
 				NSString * urlPath = [(NSURL*)url path];
@@ -87,8 +86,7 @@
 		// a NSArray so that it will be easier to iterate.
 		NSArray  *loginItemsArray = (NSArray *)LSSharedFileListCopySnapshot(loginItems, &seedValue);
 		for(int i = 0 ; i< [loginItemsArray count]; i++){
-			LSSharedFileListItemRef itemRef = (LSSharedFileListItemRef)[loginItemsArray
-                                                                        objectAtIndex:i];
+			LSSharedFileListItemRef itemRef = (LSSharedFileListItemRef)loginItemsArray[i];
 			//Resolve the item with URL
 			if (LSSharedFileListItemResolve(itemRef, 0, (CFURLRef*) &url, NULL) == noErr) {
 				NSString * urlPath = [(NSURL*)url path];
