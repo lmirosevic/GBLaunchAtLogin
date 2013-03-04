@@ -10,4 +10,8 @@
 
 @interface GBLaunchAtLogin : NSObject
 
++(BOOL)isLoginItem;
++(void)addAppAsLoginItem;
++(void)removeAppFromLoginItems;
+
 @end
