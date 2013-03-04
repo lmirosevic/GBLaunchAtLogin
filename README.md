@@ -15,7 +15,7 @@ Make your app launch at login:
 Check if the app has been added as a login item:
 
 ```objective-c
-[GBLaunchAtLogin isLoginItem];		//returns YES or NO
+[GBLaunchAtLogin isLoginItem];		//Returns: YES or NO
 ```
 
 Remove app from login items:
