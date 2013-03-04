@@ -10,6 +10,7 @@
 		8AAC5F6516E4E2880089446E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AAC5F6416E4E2880089446E /* Cocoa.framework */; };
 		8AAC5F6F16E4E2880089446E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8AAC5F6D16E4E2880089446E /* InfoPlist.strings */; };
 		8AAC5F7316E4E2880089446E /* GBLaunchAtLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC5F7216E4E2880089446E /* GBLaunchAtLogin.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8AAC5F8216E4E5A50089446E /* GBLaunchAtLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AAC5F7116E4E2880089446E /* GBLaunchAtLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AAC5F8216E4E5A50089446E /* GBLaunchAtLogin.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +294,7 @@
 				8AAC5F7816E4E2880089446E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
