@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8AAC5F6516E4E2880089446E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AAC5F6416E4E2880089446E /* Cocoa.framework */; };
-		8AAC5F6F16E4E2880089446E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8AAC5F6D16E4E2880089446E /* InfoPlist.strings */; };
 		8AAC5F7316E4E2880089446E /* GBLaunchAtLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC5F7216E4E2880089446E /* GBLaunchAtLogin.m */; settings = {COMPILER_FLAGS = ""; }; };
 		8AAC5F8216E4E5A50089446E /* GBLaunchAtLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AAC5F7116E4E2880089446E /* GBLaunchAtLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -19,8 +18,6 @@
 		8AAC5F6716E4E2880089446E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		8AAC5F6816E4E2880089446E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8AAC5F6916E4E2880089446E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		8AAC5F6C16E4E2880089446E /* GBLaunchAtLogin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GBLaunchAtLogin-Info.plist"; sourceTree = "<group>"; };
-		8AAC5F6E16E4E2880089446E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8AAC5F7016E4E2880089446E /* GBLaunchAtLogin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GBLaunchAtLogin-Prefix.pch"; sourceTree = "<group>"; };
 		8AAC5F7116E4E2880089446E /* GBLaunchAtLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBLaunchAtLogin.h; sourceTree = "<group>"; };
 		8AAC5F7216E4E2880089446E /* GBLaunchAtLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBLaunchAtLogin.m; sourceTree = "<group>"; };
@@ -87,8 +84,6 @@
 		8AAC5F6B16E4E2880089446E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8AAC5F6C16E4E2880089446E /* GBLaunchAtLogin-Info.plist */,
-				8AAC5F6D16E4E2880089446E /* InfoPlist.strings */,
 				8AAC5F7016E4E2880089446E /* GBLaunchAtLogin-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -157,7 +152,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AAC5F6F16E4E2880089446E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,17 +167,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		8AAC5F6D16E4E2880089446E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8AAC5F6E16E4E2880089446E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8AAC5F7416E4E2880089446E /* Debug */ = {
@@ -216,6 +199,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -242,6 +226,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -255,7 +240,6 @@
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GBLaunchAtLogin/GBLaunchAtLogin-Prefix.pch";
-				INFOPLIST_FILE = "GBLaunchAtLogin/GBLaunchAtLogin-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -273,7 +257,6 @@
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GBLaunchAtLogin/GBLaunchAtLogin-Prefix.pch";
-				INFOPLIST_FILE = "GBLaunchAtLogin/GBLaunchAtLogin-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
