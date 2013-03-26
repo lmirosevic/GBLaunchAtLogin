@@ -13,6 +13,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A521B571701D16300A89BE4 /* GBLaunchAtLogin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GBLaunchAtLogin-Info.plist"; sourceTree = "<group>"; };
 		8AAC5F6116E4E2880089446E /* GBLaunchAtLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GBLaunchAtLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AAC5F6416E4E2880089446E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8AAC5F6716E4E2880089446E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -34,6 +35,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A521B561701D15600A89BE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A521B571701D16300A89BE4 /* GBLaunchAtLogin-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		8AAC5F5716E4E2880089446E = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +84,7 @@
 			children = (
 				8AAC5F7116E4E2880089446E /* GBLaunchAtLogin.h */,
 				8AAC5F7216E4E2880089446E /* GBLaunchAtLogin.m */,
+				8A521B561701D15600A89BE4 /* Supporting Files */,
 			);
 			path = GBLaunchAtLogin;
 			sourceTree = "<group>";
@@ -228,6 +238,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "GBLaunchAtLogin/GBLaunchAtLogin-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -243,6 +254,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "GBLaunchAtLogin/GBLaunchAtLogin-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
