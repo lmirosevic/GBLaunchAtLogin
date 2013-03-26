@@ -18,7 +18,6 @@
 		8AAC5F6716E4E2880089446E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		8AAC5F6816E4E2880089446E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8AAC5F6916E4E2880089446E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		8AAC5F7016E4E2880089446E /* GBLaunchAtLogin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GBLaunchAtLogin-Prefix.pch"; sourceTree = "<group>"; };
 		8AAC5F7116E4E2880089446E /* GBLaunchAtLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBLaunchAtLogin.h; sourceTree = "<group>"; };
 		8AAC5F7216E4E2880089446E /* GBLaunchAtLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBLaunchAtLogin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,17 +75,8 @@
 			children = (
 				8AAC5F7116E4E2880089446E /* GBLaunchAtLogin.h */,
 				8AAC5F7216E4E2880089446E /* GBLaunchAtLogin.m */,
-				8AAC5F6B16E4E2880089446E /* Supporting Files */,
 			);
 			path = GBLaunchAtLogin;
-			sourceTree = "<group>";
-		};
-		8AAC5F6B16E4E2880089446E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8AAC5F7016E4E2880089446E /* GBLaunchAtLogin-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,8 +228,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GBLaunchAtLogin/GBLaunchAtLogin-Prefix.pch";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -255,8 +243,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GBLaunchAtLogin/GBLaunchAtLogin-Prefix.pch";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
