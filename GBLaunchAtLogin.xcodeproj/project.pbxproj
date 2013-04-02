@@ -240,7 +240,7 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "GBLaunchAtLogin/GBLaunchAtLogin-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -256,7 +256,7 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "GBLaunchAtLogin/GBLaunchAtLogin-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
